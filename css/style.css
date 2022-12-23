@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&family=Playfair+Display:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+:root{
+    --bg-color-dark: #0000001F;
+    --text-color-dark: #FFFFFF;
+    --font-family-playfair: 'Playfair Display', serif;
+}
+/* change 1rem = 10px */
+html{
+    font-size: 62.5%;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+}
+/*header*/
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 10%;
+    background-color: var(--bg-color-dark);
+    color: var(--text-color-dark);
+    position: fixed;
+    width: 100%;
+    padding: 10px 50px;
+    z-index: 3;
+}
+.logo{
+    height: 100%;
+}
+.logo img{
+    height: 75px;
+}
+.nav-items{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none; /*remove bullet symbol*/
+}
+ul li, .menu .account{
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/*hover effect on link with animation*/
+ul li:hover,.menu .account:hover{
+    background-color: var(--bg-color-dark);
+    transition: all ease-in 0.3s;
+}
+ul li a, .menu .account{
+    text-decoration: none;  /*remove underline of anchor tag*/
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.25rem;
+    color: var(--text-color-dark);
+}
+ul li:last-child{
+    background-color: #ff411bc1;
+}
+.menu img{
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+.banner{
+    height: 90vh;
+    background-image: url(../img/front.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner .overlay{
+    content: "";
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top: 0;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.6;
+    
+
+}
+.banner .content{
+    width: 40%;
+    text-align: center;
+    color: var(--text-color-dark);
+    z-index: 2;
+}
+.banner .content h1{
+    font-size: 5.8rem;
+    font-family: var(--font-family-playfair);
+    font-weight: 700;
+    line-height: 1.4;
+}
+.banner .content h5{
+    font-family: var(--font-family-playfair);
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+.banner .content p{
+    font-size: 1.6rem;
+    font-family: var(--font-family-playfair);
+    padding-bottom: 2rem;
+    letter-spacing: 2px;
+}
+.btn{
+    background-color: #ff411bc1;
+    border: none;
+    outline: none;
+    padding: 10px;
+    margin-top: 10px;
+    color: var(--text-color-dark);
+    font-family: var(--font-family-playfair);
+    letter-spacing: 2.5px;
+    font-size: 1.6rem;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.5s ease-out;
+    text-transform: capitalize;
+}
+.btn:hover{
+    transform: scale(1.15);
+   background-color: #ff411bdf;
+}
+
+@media screen and (max-width: 1023px) {
+    .nav-items{
+        display: none;
+    }
+    .menu img{
+        display: block;
+    }
+    .account{
+        display: none;
+    }
+}
+@media screen and (max-width: 760px){
+    html{
+        font-size: 47%;
+    }
+    .banner .content{
+        width: 80%;
+    }
+    .banner .content p{
+        font-size: 1.5rem;
+    }
+    
+}
+@media screen and (max-width: 310px){
+    nav{
+        justify-content: center;
+        height: auto;
+    }
+}
