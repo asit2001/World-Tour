@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Asit Biswas" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css" />
     <title>World Tour</title>
   </head>
@@ -122,93 +123,162 @@
           </div>
         </div>
       </section>
-      <section class="tour">
-        <div class="container">
-          <div class="next">
-            <div class="text">
-              <span>Your</span>
-              <span>Next <span class="underline">Holiday</span></span>
+      <!-- Tour Guides -->
+      <section class="destination">
+        <span class="promo" style="font-size: 20px;">Tour Guides</span>
+        <h2 class="heading">Meet Our Excellent Guides</h2>
+        <div class="container" style="flex-wrap: nowrap; overflow: hidden;">
+          <div class="card-scroll">
+            <div class="guide-card">
+              <img src="./img/user1.jpg" alt="Laura Gill">
+              <h2>Laura Gill</h2>
             </div>
-            <a href="" class="card-btn tour-btn">VIEW ALL PACKAGES</a>
-          </div>
-        </div>
-        <div class="warper">
-          <div class="content">
-            <div class="details">
-              <h5 class="promo" style="font-size: 1.6rem; padding-bottom: 0">
-                India
-              </h5>
-              <h2 class="heading" style="font-weight: 800">
-                The Best <span class="underline">Trekking</span>
-              </h2>
-              <p class="para">
-                Along with being one of the best mountain destinations in India
-                for its tranquillity, solitude and center of Tibetan Buddhist
-                culture, Dharamshala in Himachal Pradesh is home to the holy
-                Dalai Lama.
-              </p>
-              <p class="para">
-                A large number of travellers along with family vacationers
-                throng here for summer vacations. However, many tourists like to
-                visit it during winters to enjoy the snowfall.
-              </p>
-              <h1 class="price">
-                <span class="discount">800</span> 500 $
-                <span style="font-size: 15px">/ FOR PERSON</span>
-              </h1>
-              <button class="btn">book now</button>
+            <div class="guide-card">
+              <img src="./img/user2.jpg" alt="Ramona Ryan">
+              <h2>Ramona Ryan</h2>
             </div>
-            <div class="image-slider">
-              <div
-                class="slider"
-                style="background-image: url(./img/slider1.jpg)"
-              ></div>
-              <div
-                class="slider"
-                style="background-image: url(./img/slider2.jpg)"
-              ></div>
-              <div
-                class="slider"
-                style="background-image: url(./img/slider3.jpg)"
-              ></div>
-              <span class="arrow" onclick="changeSlider(-1)" style="left: 10px"
-                >&#10094;</span
-              >
-              <span class="arrow" onclick="changeSlider(1)" style="right: 10px"
-                >&#10095;</span
-              >
+            <div class="guide-card">
+              <img src="./img/user3.jpg" alt="Elvira Burrows">
+              <h2>Elvira Burrows</h2>
             </div>
-          </div>
-          <div class="description">
-            <div class="items">
-              <img src="./img/icons/camping-tent.png" height="50px" alt="camping-tent">
-              <div class="des">
-                <h1>Camping</h1>
-                <p class="para">Dharamshala winters are from October to March, during which the climate is chilly and snowy. During January, the temperature drops to zero degrees with a bit of snow.</p>
-                <a href="#"> View More</a>
-              </div>
+            <div class="guide-card">
+              <img src="./img/user4.jpg" alt="Sibley Cooke">
+              <h2>Sibley Cooke</h2>
             </div>
-            <div class="items">
-              <img src="./img/icons/mountains.png" height="50px" alt="camping-tent">
-              <div class="des">
-                <h1>Mountains View</h1>
-                <p class="para">The best season which will do justice to the beauty of Dharamshala, and to enjoy the outdoor activities are during summer. Tacking picture with nature and record a memory.</p>
-                <a href="#"> View More</a>
-              </div>
+            <div class="guide-card">
+              <img src="./img/user5.jpg" alt="Noelle Mendoza">
+              <h2>Noelle Mendoza</h2>
             </div>
-            <div class="items">
-              <img src="./img/icons/hiking.png" height="50px" alt="camping-tent">
-              <div class="des">
-                <h1>Trekking</h1>
-                <p class="para">One of the most mind-blowing trekking destinations, Kareri Lake is a shallow freshwater lake, located at a height of 9,626 ft (2,934 m) in the Dhauladhar range of the Himalayas in Kangra.</p>
-                <a href="#"> View More</a>
-              </div>
+            <div class="guide-card">
+              <img src="./img/user6.jpg" alt="Barclay Swanson">
+              <h2>Barclay Swanson</h2>
+            </div>
+            <div class="guide-card">
+              <img src="./img/user7.jpg" alt="Polly Andrews">
+              <h2>Polly Andrews</h2>
             </div>
           </div>
         </div>
       </section>
       <!-- PROMOTIONS -->
+      <section class="destination">
+        <span class="promo">PROMOTIONS</span>
+        <h2 class="heading">OUR PACKAGES</h2>
+        <div class="container">
+          <div class="promo-card">
+            <img src="./img/berlin.jpg" alt="Brandenburger tor" width="100%" style="transition: all 0.5s ease;">
+            <div class="details">
+              <h3 class="title">
+                Berlin
+              </h3>
+              <span class="location"><img src="./img/icons/icon-pin-grey.png" height="20px" alt="location"> Europe</span>
+                <div class="feature">
+                  <span>
+                    <p>cultural</p>
+                    <p>relax <span class="highlight" style="background-color: #ffd205;">+1</span></p>
+                  </span>
+                  <span class="price">700 $</span>
+                </div>
+                <div class="rating" style="color: #ffd205; font-size: 16px; padding: 10px;">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <span class="number">(34)</span>
+                </div>
+              <p class="para" style="margin-bottom: 20px;"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nam rerum aliquam quas, voluptas doloribus, id saepe harum corrupti molestias repellat, consequatur aspernatur autem praesentium.</p>
+              <a href="" class="btn" style="background-color: #ffd205;">DETAILS</a>
+            </div>
+          </div>
+          <div class="promo-card">
+            <img src="./img/tokio.jpg" alt="pagoda" width="100%" style="transition: all 0.5s ease;">
+            <div class="details">
+              <h3 class="title">
+                tokio
+              </h3>
+              <span class="location"><img src="./img/icons/icon-pin-grey.png" height="20px" alt="location"> Asia</span>
+                <div class="feature">
+                  <span>
+                    <p>cultural</p>
+                    <p>history <span class="highlight" style="background-color: #e50f1f;">+1</span></p>
+                  </span>
+                  <span class="price">1200 $</span>
+                </div>
+                <div class="rating" style="color: #e50f1f; font-size: 16px; padding: 10px;">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <span class="number">(46)</span>
+                </div>
+              <p class="para" style="margin-bottom: 20px;"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nam rerum aliquam quas, voluptas doloribus, id saepe harum corrupti molestias repellat, consequatur aspernatur autem praesentium.</p>
+              <a href="" class="btn" style="background-color: #e50f1f;">DETAILS</a>
+            </div>
+          </div>
+          <div class="promo-card">
+            <img src="./img/san francisco.jpg" alt="Marshall's beach" width="100%" style="transition: all 0.5s ease;">
+            <div class="details">
+              <h3 class="title">
+                san francisco
+              </h3>
+              <span class="location"><img src="./img/icons/icon-pin-grey.png" height="20px" alt="location"> United States</span>
+                <div class="feature">
+                  <span>
+                    <p>sport</p>
+                    <p>relax <span class="highlight" style="background-color: #ff6400;">+1</span></p>
+                  </span>
+                  <span class="price">1000 $</span>
+                </div>
+                <div class="rating" style="color: #ff6400; font-size: 16px; padding: 10px;">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <span class="number">(18)</span>
+                </div>
+              <p class="para" style="margin-bottom: 20px;"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nam rerum aliquam quas, voluptas doloribus, id saepe harum corrupti molestias repellat, consequatur aspernatur autem praesentium.</p>
+              <a href="" class="btn" style="background-color: #ff6400;">DETAILS</a>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+    <footer>
+      <div class="container">
+        <div class="info">
+          <a href="/"><img src="./img/logo.png" alt="logo" class="logo"/></a>
+          <p>Jet Travel is a professional and multinational India based company. Our company ensure and fullfil every Customer demand. We provide 100% refund before 2 week of travel. 100% safe January.</p>
+          <p><span style="font-weight: bold;">Location: </span>Sector V, Kolkata, India</p>
+          <p><span style="font-weight: bold;">Email: </span><a href="mailto:info@jettravelin.in">info@jettravelin.in</a></p>
+        </div>
+        <div class="list-item">
+          <h2><span class="underline">Quick Link</span></h2>
+          <ul style="list-style: none;">
+            <li><a href="">about us</a></li>
+            <li><a href="">Privacy Policy</a></li>
+            <li><a href="">Terms & Conditions</a></li>
+            <li><a href="">Customer Service</a></li>
+          </ul>
+        </div>
+        <div class="list-item">
+          <h2><span class="underline">Categories</span></h2>
+          <ul style="list-style: none;">
+            <li><a href="">Booking</a></li>
+            <li><a href="">RentalCar</a></li>
+            <li><a href="">HostelWorld</a></li>
+            <li><a href="">TripAdvisor</a></li>
+          </ul>
+        </div>
+        <div class="list-item">
+          <h2><span class="underline">Newsletter</span></h2>
+          <p>Join our community of over 200,000 global readers who receives emails filled with news, promotions, and other good stuff.</p>
+          <input type="email" placeholder="Email Address">
+          <button class="submit-btn">subscribe</button>
+        </div>
+    </footer>
     <script src="js/main.js"></script>
   </body>
 </html>
