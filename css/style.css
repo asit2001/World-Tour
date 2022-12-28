@@ -33,7 +33,6 @@ nav {
     color: var(--text-color-dark);
     position: absolute;
     width: 100%;
-    padding: 10px 50px;
     z-index: 3;
 }
 a{
@@ -55,20 +54,22 @@ a{
     align-items: center;
     list-style: none;
 }
-
-nav ul li,
+.menu{
+    padding: 10px 50px;
+}
+nav .nav-items li,
 .menu .account {
     padding: 10px;
     border-radius: 8px;
 }
 
-nav ul li:hover,
+nav .nav-items li:hover,
 .menu .account:hover {
     background-color: var(--bg-color-dark);
     transition: all ease-in 0.3s;
 }
 
-nav ul li a,
+nav .nav-items li a,
 .menu .account {
     text-transform: uppercase;
     font-weight: 500;
@@ -76,7 +77,7 @@ nav ul li a,
 
 }
 
-nav ul li:last-child {
+nav .nav-items li:last-child {
     background-color: #ff411bc1;
 }
 
@@ -87,6 +88,44 @@ nav ul li:last-child {
     display: none;
 }
 
+.side-bar{
+    transform: translateX(100%);
+    transition: all 0.5s ease-in-out;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 35%;
+    padding: 20px;
+    background-color: #505050ed;
+}
+.side-bar .x{
+    padding: 10px;
+    font-size: 18px;
+    position: absolute;
+    right: 15px;
+    cursor: pointer;
+}
+.side-bar ul{
+    list-style: none;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+.side-bar ul li{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    border-bottom: 1px solid;
+}
+.side-bar ul .last a{
+    padding: 20px 30px;
+    background: var(--bg-color-dark);
+    border-radius: 52px;
+}
+.side-bar .last{
+    border: none;
+    margin-top: 30px;
+}
 .banner {
     height: 90vh;
     background-image: url(../img/front.jpg);
@@ -165,12 +204,15 @@ nav ul li:last-child {
     .menu img {
         display: block;
     }
-
     .account {
         display: none;
     }
 }
-
+@media screen and (min-width: 1024px) {
+    .side-bar{
+        transform: translateX(100%) !important;
+    }
+}
 @media screen and (max-width: 760px) {
     html {
         font-size: 47%;
@@ -179,17 +221,27 @@ nav ul li:last-child {
     .banner .content {
         width: 80%;
     }
-
+    .side-bar{
+        width: 60%;
+    }
     .banner .content p {
         font-size: 1.5rem;
     }
 
+}
+@media screen and (max-width: 400px){
+    .side-bar{
+        width: 80%;
+    }
 }
 
 @media screen and (max-width: 310px) {
     nav {
         justify-content: center;
         height: auto;
+    }
+    .side-bar{
+        width: 90%;
     }
 }
 
@@ -330,7 +382,7 @@ h2.heading {
 }
 
 /*media query for destination section*/
-@media screen and (max-width: 646px) {
+@media screen and (max-width: 830px) {
     .card {
         display: flex;
         width: 90%;
@@ -435,6 +487,21 @@ h2.heading {
 .card-scroll:hover{
     animation-play-state: paused;
 }
+@keyframes scrolls{
+    0%{
+        transform: translateX(30%);
+    }
+    100%{
+        transform: translateX(-30%);
+    }
+}
+@media screen and (max-width:1224px){
+    .guide-card{
+        width: 60vw;
+    }
+}
+/* footer*/
+
 footer{
     display: flex;
     justify-content: center;background-image: url(../img/footer-1.jpg);
@@ -510,17 +577,4 @@ footer .info p{
     font-size: 16px;
     letter-spacing: 1.5px;
     text-transform: capitalize;
-}
-@keyframes scrolls{
-    0%{
-        transform: translateX(30%);
-    }
-    100%{
-        transform: translateX(-30%);
-    }
-}
-@media screen and (max-width:1224px){
-    .guide-card{
-        width: 60vw;
-    }
 }
