@@ -578,3 +578,25 @@ footer .info p{
     letter-spacing: 1.5px;
     text-transform: capitalize;
 }
+.numbers{
+    text-align: center;
+    color: var(--text-color-dark);
+    width: 300px;
+    z-index: 999;
+    padding: 30px;
+}
+.numbers h1{
+    font-size: 4.5rem;
+}
+.numbers .para{
+    color: var(--text-color-dark);
+    opacity: 1;
+}
+.blur::before{
+    content: "";
+    background-color: #ceb8ac;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.6;
+}
