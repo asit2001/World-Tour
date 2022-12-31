@@ -5,7 +5,7 @@
 //     changeImages()
 //     i++;
 // }, 5000);
-const menu = document.querySelector(".menu")! as HTMLDivElement;
+const menu = document.querySelector(".menu span")! as HTMLDivElement;
 const sideBar = document.querySelector(".side-bar")! as HTMLDivElement;
 const x = document.querySelector(".x")! as HTMLElement;
 const container = document.querySelector<HTMLDivElement>(".blur")!;

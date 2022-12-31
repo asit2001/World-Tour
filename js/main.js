@@ -1,5 +1,5 @@
 "use strict";
-const menu = document.querySelector(".menu");
+const menu = document.querySelector(".menu span");
 const sideBar = document.querySelector(".side-bar");
 const x = document.querySelector(".x");
 const container = document.querySelector(".blur");
