@@ -518,7 +518,7 @@ footer::after{
     left: 0;
     background: var(--bg-color-dark);
 }
-footer .info .logo{
+.info .logo{
     height: 75px;
     position: relative;
     z-index: 99;
@@ -556,13 +556,13 @@ footer .info .logo{
     border-radius: 20px;
     padding: 10px 20px;
 }
-footer .info{
+.info{
     width: 35%;
     font-size: 1.6rem;
     color: var(--text-color-dark);
     z-index: 99;
 }
-footer .info p{
+.info p{
     font-size: 16px;
     padding: 10px;
 }
