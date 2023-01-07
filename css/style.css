@@ -483,6 +483,7 @@ h2.heading {
 .card-scroll{
     display: flex;
     animation: scrolls 30s ease-in-out infinite;
+    animation-direction: alternate;
 }
 .card-scroll:hover{
     animation-play-state: paused;
