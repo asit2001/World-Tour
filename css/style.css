@@ -496,11 +496,11 @@ h2.heading {
         transform: translateX(-30%);
     }
 }
-@media screen and (max-width:1224px){
+/* @media screen and (max-width:1224px){
     .guide-card{
         width: 60vw;
     }
-}
+} */
 /* footer*/
 
 footer{
